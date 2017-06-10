@@ -109,4 +109,3 @@ console.log("salry chnge in watch ");
 
     });
 ///to work above for evey item modification then use  true with watch 
-   }]);
