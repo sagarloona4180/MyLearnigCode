@@ -1,0 +1,27 @@
+[{
+		"country": "India",
+		"cities": ["New Delhi", "Kolkatta", "Chennai", "Amritsar"]
+	},
+
+	{
+		"country": "England",
+		"cities": ["London", "Manchaester city", "Birmingham", "Birstol"]
+	},
+	{
+		"country": "Australia",
+		"cities": ["Sydney", "Brisbane", "Melbourne", "Perth"]
+	},
+	{
+		"country": "Pakistan",
+		"cities": ["Multan", "Lahore", "quaata", "karachi"]
+	},
+	{
+		"country": "Japan",
+		"cities": ["Tokyo", "Sapporo", "Hiroshima", "Sendai"]
+	},{
+		"country": "South-Africa",
+		"cities": ["Johannesburg", "Port Elizabeth", "Cape Town", "Durban,"]
+	}
+
+
+]

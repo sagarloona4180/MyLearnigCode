@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="../script/bootstrap.css"></link>
+    <link rel="stylesheet" href="../script/bootstrap-theme.css"></link>
+    <script type="text/javascript" src="../script/angular.js"></script>
+    <script type="text/javascript" src="../script/jquery.js"></script>
+    <script type="text/javascript" src="../script/bootstrap.js"></script>
+     <script src="../js/tab-navigation.js"></script>
+ 
+</head>
+
+<body  ng-app="app">
+    <div class="container" ng-controller="TabController as tabs">
+        <div class="row">
+            <div class="col-sm-6" >
+                <ul class="nav nav-pills">
+                    <li ng-class="{ active: isSet(1)}">
+                        <a href="#" ng-click="tabs.setTab(1)">Home</a></li>
+                    <li ng-class="{ active: isSet(2)}">
+                    <a href="#" ng-click="tabs.setTab(2)">Menu 1</a></li>
+                    <li ng-class="{ active: isSet(3)}">
+                    <a href="#" ng-click="tabs.setTab(3)">Menu 2</a></li>
+                    <li ng-class="{ active: isSet(4)}">
+                    <a href="#" ng-click="tabs.setTab(4)">Menu 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+       <div class="row">
+          <div ng-show="tabs.isSet(1)">
+                <h1> you clicked in tab number 1</h1> 
+          </div>
+
+           <div ng-show="tabs.isSet(2)">
+                <h1> you clicked in tab number 2</h1> 
+          </div>
+           <div ng-show="tabs.isSet(3)">
+                <h1> you clicked in tab number 3</h1> 
+          </div>
+           <div ng-show="tabs.isSet(4)">
+                <h1> you clicked in tab number 4</h1> 
+          </div>
+       </div>   
+     
+  </div>
+
+</body>
+
+</html>

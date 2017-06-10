@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="timer">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="../script/bootstrap.css"></link>
+    <link rel="stylesheet" href="../script/bootstrap-theme.css"></link>
+    <script type="text/javascript" src="../script/angular.js"></script>
+    <script type="text/javascript" src="../script/jquery.js"></script>
+    <script type="text/javascript" src="../script/bootstrap.js"></script>
+     <script type="text/javascript" src="../js/watcher.js"></script>
+</head>
+<body>
+      <div class="container"  ng-controller="timerController">
+      
+         <h1>Time Count Down </h1>
+         <h1><span ng-bind="hour" class="hour">00</span>:<span ng-bind="min" class="min">00</span>:<span ng-bind="sec" class="sec">00</span></h1>
+
+
+      
+   
+    <hr>
+
+      <div class="row">
+         <div class="form-group">
+           <label class="control-label col-sm-2" for="name">Email:</label>
+             <div class="col-sm-4">
+                <input type="email" class="form-control"  ng-model="companyEmployye.name" id="name" placeholder="Enter Name">
+             </div>
+          </div>
+  </div> <hr>
+  <div class="row">
+       <div class="form-group">
+    <label class="control-label col-sm-2" for="salary">Salary:</label>
+    <div class="col-sm-4">
+      <input type="email" class="form-control" ng-model="companyEmployye.salary" id="salary" placeholder="Enter salary">
+    </div>
+
+      </div>
+      </div>
+      <hr>
+      <div class="row">
+       <div class="form-group">
+    <label class="control-label col-sm-2" for="address">Email:</label>
+    <div class="col-sm-4">
+      <textarea  id="address"  class="form-control"  ng-model="companyEmployye.address" placeholder="Enter address"></textarea>
+    </div>
+
+      </div>
+	</div>
+</body>
+</html>

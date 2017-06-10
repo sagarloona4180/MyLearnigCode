@@ -1,0 +1,22 @@
+
+
+<table class="table table-hover table-responsive">
+         <thead>
+             <tr>
+
+             <th>Name</th>
+             <th>Salary</th>
+             <th>Email</th>
+             <th>Status</th>
+             </tr>
+         </thead>
+         <tbody>
+            <tr ng-repeat="table_row in data|filter:{name:name}">
+                  <td>{{table_row.name  |uppercase}}</td>
+                  <td>{{table_row.salary | currency:$:2}}</td>
+                  <td>{{table_row.email}}</td>
+                  <td ng-if="table_row.married"> Single</td>
+                  <td ng-if="!table_row.married">Married</td>
+            </tr>
+            </tbody>
+</table>

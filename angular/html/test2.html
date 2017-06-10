@@ -1,0 +1,46 @@
+
+<div ng-controller="AddController">
+<div class="row" >
+  
+
+         <div class="form-group">
+           <label class="control-label col-sm-2" for="name">Name:</label>
+             <div class="col-sm-4">
+                <input type="text" class="form-control"  ng-model="name" id="name" placeholder="Enter Name">
+             </div>
+          </div>
+  </div> <hr>
+  <div class="row">
+       <div class="form-group">
+    <label class="control-label col-sm-2" for="salary">Salary:</label>
+    <div class="col-sm-4">
+      <input type="text" class="form-control" ng-model="salary" id="salary" placeholder="Enter salary">
+    </div>
+
+      </div>
+      </div>
+      <hr>
+      <div class="row">
+       <div class="form-group">
+    <label class="control-label col-sm-2" for="email">Email:</label>
+    <div class="col-sm-4">
+       <input type="email" class="form-control"  ng-model="email" placeholder="Enter address"></input>
+
+    </div>
+    </div>
+    </div>
+    <hr>
+    <div class="row">
+     <div class="form-group">
+         <label class="control-label col-sm-2" for="address">Maritial Status:</label>
+       <label class="checkbox-inline"><input type="radio" ng-model="married" name="m" value="true">Married</label>
+       <label class="checkbox-inline"><input type="radio" ng-model="married" name="m" value="false">Single</label>
+    </div>
+      </div>
+         <button ng-click="addEmp(data)">Save</button>
+      </div>
+
+
+ </div>
+
+

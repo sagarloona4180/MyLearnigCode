@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	   <link rel="stylesheet" href="../script/bootstrap.css"></link>
+    <link rel="stylesheet" href="../script/bootstrap-theme.css"></link>
+    <script type="text/javascript" src="../script/angular.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
+    <script type="text/javascript" src="../script/jquery.js"></script>
+
+    <script type="text/javascript" src="../script/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/ng-route.js"></script>
+
+</head>
+<body ng-controller="StudentController">
+	   <div class="container" >
+        <div class="col-md-3">
+            <ul class="nav nav-pills nav-stacked">
+               
+                <li><a href="#/home/sagar/1000/abc@gmail.com/true">Employee List</a></li>
+                <li><a href="#/add">Add a new  Employee</a></li>
+              
+            </ul>
+        </div>
+
+        <div class="col-sm-9">
+                <div ng-view>
+
+                 </div>
+        </div>
+    </div>
+</body>
+</html>

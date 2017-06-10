@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	  <link rel="stylesheet" href="../script/bootstrap.css"></link>
+    <link rel="stylesheet" href="../script/bootstrap-theme.css"></link>
+    <script type="text/javascript" src="../script/angular.js"></script>
+    <script type="text/javascript" src="../script/jquery.js"></script>
+    <script type="text/javascript" src="../script/bootstrap.js"></script>
+    <script type="text/javascript" src="../js/anchorscroll-angular-dataset.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/anchorscrolldata.css"></link>
+</head>
+<body class="container" ng-controller="AnchorScrollCtrl">
+
+	        <div class="row">
+	          <div class="col-sm-12" ng-controller="ScrollController">
+               <span  ng-repeat="item in data">
+   
+                  <button  ng-click="scrollTo(item.country)">{{item.country}}</button>
+
+                </span>
+              </div>
+               <div class="data col-sm-4">
+
+                     <fieldset class="col-sm-12" ng-repeat="item in data" id="{{item.country}}">
+                             	<legend>{{item.country}}</legend>
+                       	<ul ng-repeat="cities in item.cities">
+                      	<li >{{cities}}</li>
+                    	</ul>
+                     </fieldset>
+                   </div>
+                   </div>
+
+</body>
+</html>

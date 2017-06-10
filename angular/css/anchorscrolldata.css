@@ -1,0 +1,13 @@
+legend { 
+    display: block;
+    padding-left: 2px;
+    padding-right: 2px;
+    border: none;
+}
+
+.data
+{
+	
+	height:160px;
+	overflow: hidden;
+}
